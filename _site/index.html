@@ -1,51 +1,184 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Your New Jekyll Site</title>
-        <meta name="viewport" content="width=device-width">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    
-      <li><span>10 Feb 2014</span> &raquo; <a href="/jekyll/update/2014/02/10/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
-    
-  </ul>
-</div>
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>MySQUAR</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        .gradient {
+            filter: none;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<div class="container visible-xs" id="appstore-banner-wrapper">
+    <div class="row appstore-banner">
+        <div class="col-xs-11 banner-left">
+            <a href="#">
+                <img src="images/icon-app-4.jpg" width="32" height="32" alt="MySTORE"/>
+                Install <span>MySTORE</span> and get easy access to our latest apps and games!
+            </a>
         </div>
+        <div class="col-xs-1 banner-right">
+            <a href="#" class="btn-close"
+               onclick="function hideBanner():void{document.getElementById('appstore-banner-wrapper').style.display = 'none';}">X</a>
+        </div>
+    </div>
+</div>
+<div class="header-wrapper">
+    <div class="container">
+        <div class="row header">
+            <div class="col-xs-12 col-md-8 logo">
+                <a href="#"><img class="img-responsive" src="img/logo.png" width="370" height="75"
+                                 alt="MySquar Logo"></a>
+            </div>
+            <div class="col-xs-12 col-md-4 social">
+                <div class="fb-like"><img src="images/img-like.jpg" width="133" height="23" alt=""/></div>
+            </div>
+        </div>
+        <div class="row featured-game">
+            <div class="col-xs-12 col-md-8 featured-slide">
+                <a href="#" class="featured-image"><img src="images/featured-game.jpg" width="586" height="263"
+                                                        alt="MyApp"/></a>
+                <a href="#" class="featured-desc">
+                    <span class="featured-title">MySTORE</span>
+                    Fusce ut mauris ut augue pharetra venenatis.
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-4 featured-details">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-md-12 hidden-xs">
+                        <div class="featured-headline">Lorem ipsum dolor sit amet</div>
+                        <div class="featured-text">
+                            Consectetur adipiscing elit. Fusce ut mauris ut augue pharetra venenatis. Integer
+                            scelerisque neque
+                            eget iaculis pretium.
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-12">
+                        <div class="row featured-game-cta">
+                            <div class="col-xs-6 col-sm-12 col-md-12"><a class="btn btn-primary" href="#">DOWNLOAD</a>
+                            </div>
+                            <div class="col-xs-6 col-sm-12 col-md-12"><a class="btn btn-primary" href="#">GOOGLE
+                                PLAY</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container app-list">
+        <div class="row list-heading">
+            <div class="col-xs-12">FEATURED</div>
+        </div>
+        <div class="row list-content">
+            
+    	
 
-    </body>
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="/apps/mymatch.html">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/icon-app-1.jpg" width="126" height="126" alt="MyMatch"/>
+                        </span>
+                    </span>
+                    <span class="app-title">MyMatch</span>
+                </a>
+            </div>
+        
+    
+    	
+
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="/apps/myninja.html">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/icon-app-2.jpg" width="126" height="126" alt="MyNinja"/>
+                        </span>
+                    </span>
+                    <span class="app-title">MyNinja</span>
+                </a>
+            </div>
+        
+    
+    	
+
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="/apps/mypic.html">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/icon-app-2.jpg" width="126" height="126" alt="MyPic"/>
+                        </span>
+                    </span>
+                    <span class="app-title">MyPic</span>
+                </a>
+            </div>
+        
+    
+    	
+
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="/apps/mysocial.html">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/icon-app-4.jpg" width="126" height="126" alt="MySocial"/>
+                        </span>
+                    </span>
+                    <span class="app-title">MySocial</span>
+                </a>
+            </div>
+        
+    
+    	
+
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="/apps/mystore.html">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/icon-app-1.jpg" width="126" height="126" alt="MySTORE"/>
+                        </span>
+                    </span>
+                    <span class="app-title">MySTORE</span>
+                </a>
+            </div>
+        
+    
+    	
+
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="/apps/mytruefalse.html">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/icon-app-3.jpg" width="126" height="126" alt="MyTrue/False"/>
+                        </span>
+                    </span>
+                    <span class="app-title">MyTrue/False</span>
+                </a>
+            </div>
+        
+    
+    	
+    
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container footer-container">
+        <ul class="footer-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+</body>
 </html>
+

@@ -1,0 +1,302 @@
+body{
+    font-size: 1em;
+    background: #eee;
+    font-family: 'Droid Serif' Helvetica, Arial, sans-serif;
+}
+/* general style */
+a{
+    color: #efbd1c;
+}
+a:hover,a:focus{
+    text-decoration: none;
+}
+.btn{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-shadow: 0 0 1px #ddd;
+    color: #2c2b2c;
+    border: 1px solid rgba(101,79,8,0.3);
+    padding: 10px 0;
+    text-align: center;
+    display: inline-block;
+}
+.btn:hover,.btn:focus,btn.active{
+    text-decoration: none;
+}
+.btn.btn-primary{
+    border: solid 1px #cfa419;
+    background: #efbd1c;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmYmQxYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhODg1MTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #efbd1c 0%, #a88516 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efbd1c), color-stop(100%,#a88516));
+    background: -webkit-linear-gradient(top,  #efbd1c 0%,#a88516 100%);
+    background: -o-linear-gradient(top,  #efbd1c 0%,#a88516 100%);
+    background: -ms-linear-gradient(top,  #efbd1c 0%,#a88516 100%);
+    background: linear-gradient(to bottom,  #efbd1c 0%,#a88516 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efbd1c', endColorstr='#a88516',GradientType=0 );
+}
+.btn.btn-primary:hover,.btn.btn-primary:focus,btn.btn-primary.active{
+    background-color:#efb403;
+}
+
+/* landing page */
+.header-wrapper{
+    margin-bottom: 10px;
+    background: #828c95;
+    background: -moz-linear-gradient(top,  #828c95 1%, #39393c 1%, #828282 50%, #635f61 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#828c95), color-stop(1%,#39393c), color-stop(50%,#828282), color-stop(100%,#635f61));
+    background: -webkit-linear-gradient(top,  #828c95 1%,#39393c 1%,#828282 50%,#635f61 100%);
+    background: -o-linear-gradient(top,  #828c95 1%,#39393c 1%,#828282 50%,#635f61 100%);
+    background: -ms-linear-gradient(top,  #828c95 1%,#39393c 1%,#828282 50%,#635f61 100%);
+    background: linear-gradient(to bottom,  #828c95 1%,#39393c 1%,#828282 50%,#635f61 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828c95', endColorstr='#635f61',GradientType=0 );
+    -webkit-box-shadow: 0px 5px 5px 0px rgb(50, 50, 50);
+    -moz-box-shadow:    0px 5px 5px 0px rgb(50, 50, 50);
+    box-shadow:         0px 5px 5px 0px rgb(50, 50, 50);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.header{
+    padding: 15px 0 0 0;
+}
+
+.header .social{
+    margin:15px 0;
+}
+
+.featured-game{
+    padding-bottom: 10px;
+    text-shadow: 0 0 1px #000;
+}
+
+.featured-game .featured-image{
+    position: relative;
+    display: block;
+}
+.featured-game .featured-image img{
+    border: 2px solid rgb(255,255,255);
+    border: 2px solid rgba(255,255,255,0.3);
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.featured-game .featured-slide .featured-desc{
+    display: block;
+    font-size: 1.6em;
+    color:#ffffff;
+    background: url("../img/bg-featured-desc.png") 0 0 repeat;
+    background: rgba(0,0,0,0.6);
+    padding:10px;
+}
+.featured-game .featured-slide .featured-desc .featured-title{
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    color: #eebd1c;
+}
+.featured-game .featured-details{
+    margin-top: 15px;
+    font-size: 1.6em;
+}
+
+.featured-game .featured-details .featured-headline{
+    font-size: 1.25em;
+    color: #efbd1c;
+    text-transform: uppercase;
+}
+
+.featured-game .featured-details .featured-text{
+    margin:10px 0;
+    color: #fff;
+}
+.featured-game .featured-details .btn.btn-primary{
+    display: block;
+    margin-bottom: 10px;
+    font-size:0.9em;
+}
+.content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.content .app-list .list-heading{
+    font-size: 2.5em;
+    color: #2c2b2c;
+    padding-bottom: 10px;
+}
+.content .app-list .list-content .app-item{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.content .app-list .list-content .app-item>a{
+    display: block;
+    color: #828282;
+}
+.content .app-list .list-content .app-item>a:hover,.content .list-content .app-item>a:focus{
+    color: #333;
+}
+.content .app-list .list-content .app-item>a>.app-thumb-wrapper{
+    display: inline-block;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    border-radius:12px;
+    overflow: hidden;
+    min-width: 100%;
+}
+.content .app-list .list-content .app-item>a>.app-thumb-wrapper .app-thumb{
+    border:solid 12px #525359;
+    background: #525359;
+    border-image: -webkit-linear-gradient(45deg,#343435,#949494) 20 stretch;
+    background-clip: padding-box;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+.content .app-list .list-content .app-item>a>.app-thumb-wrapper .app-thumb img{
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.content .app-list .list-content .app-item .app-title{
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.footer{
+    text-shadow: 1px 1px 1px #fff;
+}
+.footer .footer-container{
+    padding-top:30px;
+    padding-bottom: 30px;
+    background:url("../img/bg-footer.jpg") top center no-repeat;
+}
+.footer .footer-menu{
+    margin:-15px 0 0 0;
+    padding:0;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5em;
+}
+.footer .footer-menu li{
+    margin:0 10px 0 0;
+    list-style: none;
+    display: inline-block;
+}
+.footer .footer-menu li a{
+    color: #828282;
+    border-left: solid 1px #828282;
+    display: block;
+    padding:0 0 0 10px;
+    line-height: 0.75;
+}
+.footer .footer-menu li:first-child a{
+    border-left: none;
+    padding-left: 0;
+}
+.appstore-banner{
+    background: #fff;
+    padding: 5px;
+    font-size: 1.2em;
+}
+.appstore-banner .banner-left{
+    padding: 5px;
+}
+.appstore-banner .banner-right{
+    padding: 10px 0 0 0;
+}
+.appstore-banner a{
+    display: block;
+    color: #000000;
+}
+.appstore-banner a img{
+    float: left;
+    margin-right: 5px;
+}
+.appstore-banner a.btn-close{
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    width: 24px;
+    height: 24px;
+    line-height: 16px;
+    background: #eee;
+    vertical-align: middle;
+    padding: 5px;
+}
+/* responsive now! */
+@media screen and (min-width:768px) {
+    .featured-game{
+        padding-bottom: 20px;
+    }
+    .featured-game .featured-details .btn.btn-primary{
+        font-size: 1.25em;
+    }
+    .featured-game .featured-slide .featured-desc{
+        position: absolute;
+        display: block;
+        bottom: 7px;
+        left: 23px;
+        right: 23px;
+        font-size: 2em;
+        text-align: right;
+        padding:10px 30px 10px 30px;
+    }
+    .featured-game .featured-slide .featured-desc .featured-title{
+        font-size: 2em;
+    }
+    .featured-game .featured-image img {
+        border: 8px solid rgb(255,255,255);
+        border: 8px solid rgba(255,255,255,0.3);
+    }
+}
+@media screen and (min-width:992px) {
+    .header{
+        padding: 35px 0;
+    }
+    .header .social{
+        text-align: right;
+        margin:0;
+    }
+    .content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .content .app-list .list-heading{
+        padding-bottom: 15px;
+    }
+    .featured-game{
+        padding-bottom: 30px;
+    }
+    .featured-game .featured-details{
+        margin-top: 0;
+    }
+    .featured-game .featured-details .btn.btn-primary{
+         font-size: 1.5em;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container {
+        width: 960px;
+    }
+    .content{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .featured-game{
+        padding-bottom: 40px;
+    }
+}
