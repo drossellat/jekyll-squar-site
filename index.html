@@ -1,13 +1,20 @@
 ---
 layout: default
-title: Your Crazy Awesome Amazing  New Jekyll Site
+title: home
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% for app in site.pages %}
+    	{% if app.title != "home" %}
+
+            <div class="col-xs-6 col-sm-4 col-md-2 app-item">
+                <a href="{{app.url}}">
+                    <span class="app-thumb-wrapper">
+                        <span class="app-thumb">
+                            <img src="images/{{app.thumbnail}}" width="126" height="126" alt="{{ app.title }}"/>
+                        </span>
+                    </span>
+                    <span class="app-title">{{ app.title }}</span>
+                </a>
+            </div>
+        {% endif %}
     {% endfor %}
-  </ul>
-</div>
